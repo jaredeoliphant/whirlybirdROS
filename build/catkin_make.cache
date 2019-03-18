@@ -1,0 +1,2 @@
+whirlybird_controller:whirlybird_description:whirlybird_msgs:whirlybird_sim
+-DCATKIN_DEVEL_PREFIX=/fsf/jaredeo/ME431_Controls/whirlybird_ws/devel -DCMAKE_INSTALL_PREFIX=/fsf/jaredeo/ME431_Controls/whirlybird_ws/install -G Unix Makefiles

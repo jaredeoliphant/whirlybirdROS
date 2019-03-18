@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /auto/fsf/jaredeo/ME431_Controls/whirlybird_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_950db/fast"
+/usr/bin/make -f CMakeFiles/cmTC_950db.dir/build.make CMakeFiles/cmTC_950db.dir/build
+make[1]: Entering directory '/auto/fsf/jaredeo/ME431_Controls/whirlybird_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_950db.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_950db.dir/CheckSymbolExists.c.o   -c /auto/fsf/jaredeo/ME431_Controls/whirlybird_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_950db
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_950db.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_950db.dir/CheckSymbolExists.c.o  -o cmTC_950db -rdynamic 
+CMakeFiles/cmTC_950db.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_950db.dir/build.make:97: recipe for target 'cmTC_950db' failed
+make[1]: *** [cmTC_950db] Error 1
+make[1]: Leaving directory '/auto/fsf/jaredeo/ME431_Controls/whirlybird_ws/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_950db/fast' failed
+make: *** [cmTC_950db/fast] Error 2
+
+File /auto/fsf/jaredeo/ME431_Controls/whirlybird_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /auto/fsf/jaredeo/ME431_Controls/whirlybird_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_768eb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_768eb.dir/build.make CMakeFiles/cmTC_768eb.dir/build
+make[1]: Entering directory '/auto/fsf/jaredeo/ME431_Controls/whirlybird_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_768eb.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_768eb.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_768eb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_768eb.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_768eb.dir/CheckFunctionExists.c.o  -o cmTC_768eb -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_768eb.dir/build.make:97: recipe for target 'cmTC_768eb' failed
+make[1]: *** [cmTC_768eb] Error 1
+make[1]: Leaving directory '/auto/fsf/jaredeo/ME431_Controls/whirlybird_ws/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_768eb/fast' failed
+make: *** [cmTC_768eb/fast] Error 2
+
+

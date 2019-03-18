@@ -1,0 +1,8 @@
+prefix=/fsf/jaredeo/ME431_Controls/whirlybird_ws/devel
+
+Name: whirlybird_description
+Description: Description of whirlybird_description
+Version: 0.0.0
+Cflags: 
+Libs: -L/fsf/jaredeo/ME431_Controls/whirlybird_ws/devel/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/fsf/jaredeo/ME431_Controls/whirlybird_ws/devel
+
+Name: whirlybird_msgs
+Description: Description of whirlybird_msgs
+Version: 0.0.0
+Cflags: -I/fsf/jaredeo/ME431_Controls/whirlybird_ws/devel/include
+Libs: -L/fsf/jaredeo/ME431_Controls/whirlybird_ws/devel/lib 
+Requires: 

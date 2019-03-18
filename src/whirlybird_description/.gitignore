@@ -1,0 +1,6 @@
+*~
+*.swp
+*.user
+
+*.pyc
+CMakelists.txt
